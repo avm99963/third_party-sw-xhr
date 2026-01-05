@@ -1,9 +1,9 @@
 export default class XMLHttpRequestPolyfill implements XMLHttpRequest {
-    readonly DONE: number;
-    readonly HEADERS_RECEIVED: number;
-    readonly LOADING: number;
-    readonly OPENED: number;
-    readonly UNSENT: number;
+    readonly DONE: 4;
+    readonly HEADERS_RECEIVED: 2;
+    readonly LOADING: 3;
+    readonly OPENED: 1;
+    readonly UNSENT: 0;
     readyState: number;
     response: any;
     responseText: string;
@@ -17,7 +17,7 @@ export default class XMLHttpRequestPolyfill implements XMLHttpRequest {
     withCredentials: boolean;
     private events;
     onabort: (this: XMLHttpRequest, ev: Event) => any;
-    onerror: (this: XMLHttpRequest, ev: ErrorEvent) => any;
+    onerror: (this: XMLHttpRequest, ev: ProgressEvent) => any;
     onload: (this: XMLHttpRequest, ev: Event) => any;
     onloadend: (this: XMLHttpRequest, ev: ProgressEvent) => any;
     onloadstart: (this: XMLHttpRequest, ev: Event) => any;
@@ -40,4 +40,4 @@ export default class XMLHttpRequestPolyfill implements XMLHttpRequest {
     send(data?: any): void;
 }
 
-
+type EventListenerTypes = keyof XMLHttpRequestEventMap;
