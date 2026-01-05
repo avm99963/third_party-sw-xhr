@@ -1,0 +1,9 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>renovate-presets",
+    // Temporary, so that we can upgrade right away all dependencies now
+    // that we have created the fork.
+    ":prHourlyLimitNone"
+  ]
+}
