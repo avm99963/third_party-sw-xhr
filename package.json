@@ -1,6 +1,6 @@
 {
   "name": "@avm99963/sw-xhr",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Polyfill XMLHttpRequest api with fetch",
   "main": "index.js",
   "scripts": {
