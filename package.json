@@ -1,5 +1,5 @@
 {
-  "name": "xhr4sw",
+  "name": "@avm99963/sw-xhr",
   "version": "0.0.5",
   "description": "Polyfill XMLHttpRequest api with fetch",
   "main": "index.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/markis/sw-xhr.git"
+    "url": "git+ssh://git@github.com/avm99963/third_party-sw-xhr.git"
   },
   "files": [
     "index.d.ts",
@@ -30,12 +30,12 @@
     "sw-xhr",
     "minification"
   ],
-  "author": "Markis Taylor <m@rkis.cc>",
+  "contributors": [
+    "Markis Taylor <m@rkis.cc>",
+    "Adrià Vilanova <me@avm99963.com>"
+  ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/markis/sw-xhr/issues"
-  },
-  "homepage": "https://github.com/markis/sw-xhr#readme",
+  "homepage": "https://github.com/avm99963/third_party-sw-xhr#readme",
   "devDependencies": {
     "@types/fetch-mock": "6.0.0",
     "@types/node-fetch": "^1.6.7",
